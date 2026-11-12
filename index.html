@@ -1,76 +1,177 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cyborg World</title>
+
+    <title>Nature Parallax | Explore The World</title>
+
     <link rel="stylesheet" href="style.css">
- </head>
- <body>
-   <nav class="navbar">
-      <div class="logo">CYBORG<span>
-         WORLD</span></div>
+</head>
 
-         <ul>
-            <li><a href="#home">Home</a></li>
+<body>
 
-            <li><a href="#about">About</a></li>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
 
-            <li><a href="#features">Features</a></li>
+            <a href="#home" class="logo">NATURE<span>.</span></a>
 
-            <li><a href="#contact">Contact</a></li>
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
 
-         </ul>
-   </nav>
- 
-   <section class="hero"id="home">
-   <div class="hero-content">
-    <h1>WELCOME TO CYBORG WORLD</h1>
-    <P>Explore the future of technology.</P>
-    <button>Explor Now</button>
-    <p id="message"></p>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1654009603731-20b6d7536002?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D alt="Cyborg">
-    </div>
-    </section>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mountains">Mountains</a></li>
+                <li><a href="#forest">Forest</a></li>
+                <li><a href="#ocean">Ocean</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
 
-    <section id="about"class="about">
+        </nav>
+    </header>
 
-      <h2>About Cyborg World</h2>
-      
-      <p>
-        Cyborg World is a place where humans and technology
-               come together to create a smarter future.
-      </p>
-      </section>
 
-      <section id="features" class="features">
-        <h2>Our Features</h2>
+    <!-- Hero Section -->
+    <main>
 
-    <div>
-      <h3>Artificial intelligent</h3>
-      <p>Discover the power of smart AI technology.</p>
-    </div>   
-    <div>
-      <h3>Advanced Robotics</h3>
-      <p>Explore intelligent robots and automation.</p>
-    </div>
+        <section class="scene hero" id="home">
 
-    <div>
-      <h3>Future Technology</h3>
-      <p>Experience the next genetation of innovation.</p>
-    </div>
+            <div class="parallax-bg hero-bg"></div>
 
-    </section>
+            <div class="overlay"></div>
 
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>Have questions? Connect with Cyborg World!</p>
-      <p>Email: hello@cyborgwold.cpm</p>
-    </section>
-   
- <script src="script.js"></script> 
- </body>
- </html>
- 
+            <div class="content hero-content">
+                <p class="tagline">DISCOVER THE BEAUTY OF EARTH</p>
+
+                <h1>Explore The <span>Nature</span></h1>
+
+                <p class="description">
+                    Escape the ordinary and discover the extraordinary
+                    beauty of our beautiful planet.
+                </p>
+
+                <a href="#mountains" class="explore-btn">
+                    Explore Now →
+                </a>
+            </div>
+
+            <div class="scroll-text">
+                SCROLL TO EXPLORE ↓
+            </div>
+
+        </section>
+
+
+        <!-- Mountains Section -->
+        <section class="scene" id="mountains">
+
+            <div class="parallax-bg mountain-bg"></div>
+            <div class="overlay"></div>
+
+            <div class="content reveal">
+                <p class="tagline">01 — THE MOUNTAINS</p>
+
+                <h2>Touch The <span>Sky</span></h2>
+
+                <p class="description">
+                    Discover majestic mountains, peaceful valleys
+                    and breathtaking views.
+                </p>
+
+                <a href="#forest" class="explore-btn">
+                    Discover More →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Forest Section -->
+        <section class="scene" id="forest">
+
+            <div class="parallax-bg forest-bg"></div>
+            <div class="overlay"></div>
+
+            <div class="content reveal">
+                <p class="tagline">02 — THE FOREST</p>
+
+                <h2>Into The <span>Wild</span></h2>
+
+                <p class="description">
+                    Find peace in the green forests and
+                    experience the magic of wildlife.
+                </p>
+
+                <a href="#ocean" class="explore-btn">
+                    Explore Forest →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Ocean Section -->
+        <section class="scene" id="ocean">
+
+            <div class="parallax-bg ocean-bg"></div>
+            <div class="overlay"></div>
+
+            <div class="content reveal">
+                <p class="tagline">03 — THE OCEAN</p>
+
+                <h2>Feel The <span>Waves</span></h2>
+
+                <p class="description">
+                    Explore the endless blue ocean and
+                    discover the wonders beneath the waves.
+                </p>
+
+                <a href="#about" class="explore-btn">
+                    Discover More →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="about-content reveal">
+
+                <p class="tagline">OUR BEAUTIFUL PLANET</p>
+
+                <h2>Protect Our <span>Nature</span></h2>
+
+                <p>
+                    Nature gives us life, beauty and inspiration.
+                    Let's protect our planet and make it
+                    beautiful for future generations.
+                </p>
+
+                <a href="#home" class="explore-btn">
+                    Back To Top ↑
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© <span id="year"></span> Nature Parallax. All Rights Reserved.</p>
+        <p>Designed with ❤️ for Nature</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
